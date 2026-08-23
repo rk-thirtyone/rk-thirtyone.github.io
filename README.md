@@ -1,6 +1,6 @@
 # rk-thirtyone.github.io
 
-Landing page / hub untuk RK-Lab — kumpulan kalkulator interaktif:
+Landing page / hub untuk RK-Thirtyone — kumpulan tools interaktif:
 
 - [Kalkulator Matematika](https://rk-thirtyone.github.io/rk-lab-matematika/)
 - [Kalkulator Massa dari Volume](https://rk-thirtyone.github.io/rk-lab-massa/)
