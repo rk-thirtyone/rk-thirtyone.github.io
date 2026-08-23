@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RK-Lab — Kumpulan Kalkulator</title>
+<meta name="description" content="Kumpulan kalkulator interaktif RK-Lab — matematika, massa, dan tool lainnya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #f7f3ea;
+    --panel: #ffffff;
+    --border: #e4ddcd;
+    --ink: #1e3a5f;
+    --ink-soft: #5c6b7a;
+    --ink-dim: #8b95a1;
+    --accent: #1e3a5f;
+    --mint: #21d19f;
+    --mint-dim: rgba(33,209,159,0.14);
+    --coral: #e05d5d;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{ height:100%; }
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 40px 16px 60px;
+    min-height:100vh;
+  }
+  .wrap{ max-width: 640px; margin: 0 auto; }
+
+  header{ text-align:center; margin-bottom: 36px; }
+  .logo-mark{
+    display:inline-flex; align-items:center; justify-content:center;
+    width: 56px; height: 56px; border-radius: 14px;
+    background: var(--ink); color: #fff;
+    font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:22px;
+    margin-bottom: 16px;
+  }
+  h1{
+    font-family:'Space Grotesk',sans-serif; font-weight:700; font-size: 28px;
+    letter-spacing: -0.3px; margin-bottom: 8px;
+  }
+  header p{ color: var(--ink-soft); font-size: 14px; line-height:1.6; max-width: 420px; margin: 0 auto; }
+
+  .grid{ display:flex; flex-direction:column; gap: 14px; }
+
+  .card{
+    display:flex; align-items:center; gap: 16px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 18px;
+    text-decoration:none;
+    color: inherit;
+    box-shadow: 0 4px 14px rgba(30,58,95,0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .card:hover{ transform: translateY(-2px); box-shadow: 0 10px 24px rgba(30,58,95,0.10); }
+
+  .card-icon{
+    flex-shrink:0;
+    width: 48px; height: 48px; border-radius: 12px;
+    display:flex; align-items:center; justify-content:center;
+    font-size: 22px;
+  }
+  .icon-math{ background: var(--mint-dim); }
+  .icon-mass{ background: rgba(224,93,93,0.12); }
+
+  .card-body{ flex:1; min-width:0; }
+  .card-title{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size: 16px; margin-bottom: 4px; }
+  .card-desc{ font-size: 13px; color: var(--ink-soft); line-height:1.5; }
+
+  .card-arrow{ color: var(--ink-dim); font-size: 18px; flex-shrink:0; }
+
+  .coming-soon{
+    border-style: dashed;
+    opacity: 0.6;
+    cursor: default;
+  }
+  .coming-soon:hover{ transform:none; box-shadow: 0 4px 14px rgba(30,58,95,0.05); }
+  .badge{
+    font-size: 10px; font-weight:700; letter-spacing:0.4px;
+    color: var(--ink-dim); background: var(--border);
+    border-radius: 6px; padding: 3px 8px; text-transform:uppercase;
+    flex-shrink:0;
+  }
+
+  footer{
+    text-align:center; margin-top: 44px;
+    font-size: 12px; color: var(--ink-dim);
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo-mark">RK</div>
+      <h1>RK-Lab</h1>
+      <p>Kumpulan kalkulator interaktif — praktis, cepat, bisa diinstall langsung ke HP.</p>
+    </header>
+
+    <div class="grid">
+      <a class="card" href="https://rk-thirtyone.github.io/rk-lab-matematika/">
+        <div class="card-icon icon-math">📐</div>
+        <div class="card-body">
+          <div class="card-title">Kalkulator Matematika</div>
+          <div class="card-desc">Bangun datar, bangun ruang, aljabar, statistika, dan teori bilangan — lengkap dengan diagram &amp; pembahasan.</div>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <a class="card" href="https://rk-thirtyone.github.io/rk-lab-massa/">
+        <div class="card-icon icon-mass">⚖️</div>
+        <div class="card-body">
+          <div class="card-title">Kalkulator Massa dari Volume</div>
+          <div class="card-desc">Kubus, balok, tabung, pipa, bola, kerucut, IWF/WF, hollow — lengkap dengan wadah &amp; toleransi beban.</div>
+        </div>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <div class="card coming-soon">
+        <div class="card-icon" style="background: var(--border);">✨</div>
+        <div class="card-body">
+          <div class="card-title">Tool berikutnya</div>
+          <div class="card-desc">Menyusul — akan ditambahkan di sini.</div>
+        </div>
+        <div class="badge">Segera</div>
+      </div>
+    </div>
+
+    <footer>RK-Lab · rk-thirtyone</footer>
+  </div>
+</body>
+</html>
