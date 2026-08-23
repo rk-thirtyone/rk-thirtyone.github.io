@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RK-Thirtyone — Kumpulan Tools Interaktif</title>
-<meta name="description" content="Kumpulan tools interaktif RK-Thirtyone — kalkulator matematika, massa, dan tool lainnya.">
+<meta name="description" content="Kumpulan tools interaktif RK-Thirtyone — kalkulator matematika, massa, catatan belanja & RAB, dan tool lainnya.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -68,25 +68,13 @@
   }
   .icon-math{ background: var(--mint-dim); }
   .icon-mass{ background: rgba(224,93,93,0.12); }
+  .icon-nota{ background: rgba(30,58,95,0.10); }
 
   .card-body{ flex:1; min-width:0; }
   .card-title{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size: 16px; margin-bottom: 4px; }
   .card-desc{ font-size: 13px; color: var(--ink-soft); line-height:1.5; }
 
   .card-arrow{ color: var(--ink-dim); font-size: 18px; flex-shrink:0; }
-
-  .coming-soon{
-    border-style: dashed;
-    opacity: 0.6;
-    cursor: default;
-  }
-  .coming-soon:hover{ transform:none; box-shadow: 0 4px 14px rgba(30,58,95,0.05); }
-  .badge{
-    font-size: 10px; font-weight:700; letter-spacing:0.4px;
-    color: var(--ink-dim); background: var(--border);
-    border-radius: 6px; padding: 3px 8px; text-transform:uppercase;
-    flex-shrink:0;
-  }
 
   footer{
     text-align:center; margin-top: 44px;
@@ -121,14 +109,14 @@
         <div class="card-arrow">→</div>
       </a>
 
-      <div class="card coming-soon">
-        <div class="card-icon" style="background: var(--border);">✨</div>
+      <a class="card" href="https://rk-thirtyone.github.io/kalkulator-nota/">
+        <div class="card-icon icon-nota">🧾</div>
         <div class="card-body">
-          <div class="card-title">Tool berikutnya</div>
-          <div class="card-desc">Menyusul — akan ditambahkan di sini.</div>
+          <div class="card-title">Kalkulator Nota</div>
+          <div class="card-desc">Catat belanja harian atau hitung estimasi biaya proyek — multi-item, otomatis totalnya, bisa disimpan jadi gambar atau PDF.</div>
         </div>
-        <div class="badge">Segera</div>
-      </div>
+        <div class="card-arrow">→</div>
+      </a>
     </div>
 
     <footer>RK-Thirtyone</footer>
